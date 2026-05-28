@@ -30,6 +30,9 @@ Each ranking row is published as returned by the public API. Current fields incl
 
 - `rank`
 - `brand_id`
+- `brand_name`
+- `brand_slug`
+- `brand_url`
 - `score`
 - `mentions`
 - `cumulative_mentions`
@@ -42,4 +45,6 @@ Each ranking row is published as returned by the public API. Current fields incl
 - `logo_url`
 - `context`
 
-Fields may change if the public API evolves. Monthly JSON snapshots preserve the full rankings API response for that month; CSV snapshots flatten ranking rows for analysis.
+Monthly JSON snapshots also include top-level `meta` provenance with schema version, snapshot month, generation time, source URLs, methodology URL, publisher, and license metadata. Fields may change if the public API evolves. Monthly JSON snapshots preserve the full rankings API response for that month; CSV snapshots flatten ranking rows for analysis.
+
+See [`data-dictionary.md`](data-dictionary.md) for the current field reference.

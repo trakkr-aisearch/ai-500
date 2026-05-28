@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use The AI 500, cite the dataset and include the snapshot month."
+title: "The AI 500: Monthly Public Snapshots of Trakkr Global AI Visibility Rankings"
+type: dataset
+authors:
+  - name: "Trakkr"
+version: "2026-05"
+date-released: "2026-05-01"
+license: "CC-BY-4.0"
+repository-code: "https://github.com/trakkr-aisearch/ai-500"
+url: "https://github.com/trakkr-aisearch/ai-500"
+abstract: "Monthly public snapshots of the top 500 brands in Trakkr global AI visibility rankings."
+keywords:
+  - "AI visibility"
+  - "generative engine optimization"
+  - "answer engine optimization"
+  - "brand rankings"
+  - "LLM search"

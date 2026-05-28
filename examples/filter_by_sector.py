@@ -19,4 +19,4 @@ with (ROOT / "latest.json").open(encoding="utf-8") as handle:
 df = pd.DataFrame(data["rankings"])
 sector_df = df[df["sector"].eq(SECTOR)].sort_values("rank")
 
-print(sector_df[["rank", "brand_id", "score", "mentions", "industries"]].head(25))
+print(sector_df[["rank", "brand_name", "score", "mentions", "industries"]].head(25))

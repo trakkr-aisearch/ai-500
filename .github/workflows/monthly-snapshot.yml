@@ -29,6 +29,7 @@ jobs:
           python -m json.tool latest.json >/dev/null
           test -s "snapshots/$(date -u +'%Y-%m').json"
           test -s "snapshots/$(date -u +'%Y-%m').csv"
+          python scripts/validate.py
 
       - name: Commit and push changes
         run: |

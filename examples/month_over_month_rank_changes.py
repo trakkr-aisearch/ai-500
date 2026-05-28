@@ -25,7 +25,7 @@ with current_path.open(encoding="utf-8") as handle:
 previous = pd.DataFrame(previous_data["rankings"])
 current = pd.DataFrame(current_data["rankings"])
 
-changes = current[["brand_id", "rank"]].merge(
+changes = current[["brand_id", "brand_name", "rank"]].merge(
     previous[["brand_id", "rank"]],
     on="brand_id",
     suffixes=("_current", "_previous"),
